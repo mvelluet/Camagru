@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<meta charset="utf-8">
+
+	<meta xmlns="http://www.w3.org/1999/xhtml" name="description" content="Projet Camagru" />
+	<meta content="webcam, getUserMedia, video, stream" name="keywords">
+	<meta content="Display Webcam Stream" name="title">
+
+	<title>Camagru | profil</title>
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body class="p_body">
+	<header class="p_header">
+		<h1 class="p_h1"><a href="#">CAMAGRU</a></h1>
+		<h3 class="p_h_profils p_deco"><a href="#">Deconnexion</a></h3>
+		<h3 class="p_h_profils"><a href="#">Galerie | </a></h3>
+		<h3 class="p_h_profils p_profil"><a href="#">Profil | </a></h3>
+	</header>
+
+
+	<!-- video  -->
+	<div class="p_div_main_nav">
+		<main class="p_main">
+			<div id="container">
+				<div class="p_filtre">
+					<form class="p_form_montage">
+						<label>Filtre - </label>
+						<label>Chat :</label>
+						<input type="radio" id="Chat" name="filtre" value="chat">
+						<label>Chien :</label>
+						<input type="radio" id="Chien" name="filtre" value="chien">
+						<label>Fleur :</label>
+						<input type="radio" id="Fleur" name="filtre" value="fleur">
+					</form>
+					<form class="p_form_upload" ><input type="file" name="Upload" id="file_upload" accept="image/*"></form>
+				</div>
+				<div>
+					<video autoplay="true" id="video_webcam">
+					</video>
+					<img class="p_montage" src="../img/montage_1.png">
+					<button class="p_btn" onclick="photo();">Prendre photo</button>
+					
+				</div>
+
+			</div>
+		</main>
+
+		<!-- liste image -->
+
+		<nav class="p_nav">
+			<div class="p_content_img" >
+				<img class="p_img" src="../img/img_1.png">
+				<img class="p_img" src="../img/img_2.png">
+				<img class="p_img" src="../img/img_3.png">	
+			</div>
+		</nav>
+
+
+		<!-- <img src="../img/chien_1.png">	 -->
+<!-- 
+	<canvas class="p_canvas" id="canvas" height="480" width="640px" style="border:4px solid #d3d3d3;"></canvas> -->
+
+
+	</div>
+	<footer class="p_header p_footer">
+		<p style="float: right;"><i>© mvelluet 2017</i></p>
+	</footer>
+
+<script type="text/javascript" src="../js/app.js"></script>
+<script>ft_getvideo();</script>
+</body>
+</html>
